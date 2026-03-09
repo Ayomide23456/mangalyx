@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manga Details</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="text-white text-wrap">
+    <header>
+      <div class="h-[300px] relative">
+        <a
+          href="../html/index.html"
+          class="flex w-[40px] h-[40px] items-center justify-center px-[5px] rounded-[50%] bg-white bg-opacity-20 backdrop-blur-sm mt-[5px] mx-[10px] absolute top-1 z-10 text-black text-[16px] font-bold"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </a>
+
+        <div
+          class="carousel relative overflow-hidden h-[300px] bg-gray-700 w-full px-3 flex"
+        >
+          <img
+            id="manga-cover"
+            src=""
+            alt="Manga Cover"
+            class="h-[150px] w-[120px] flex-shrink-0 rounded-[5px] absolute top-[43.5%] object-cover border"
+          />
+          <div
+            class="h-[150px] w-[120px] flex-shrink-0 rounded-[5px] flex flex-col justify-end items-end absolute top-[43.5%] border px-2 pb-2 text-[24px]"
+          >
+            <i
+              id="manga-heart"
+              class="bi bi-heart-fill text-white cursor-pointer transition-colors"
+            ></i>
+          </div>
+          <div
+            class="w-[230px] h-auto absolute top-[45%] left-[34%] py-3 justify-center px-2 flex flex-col gap-2"
+            id="manga-info"
+          ></div>
+        </div>
+      </div>
+    </header>
+    <section class="collapsible">
+      <details class="group max-w-lg bg-gray-600 pl-4 pr-2 py-3.5">
+        <summary
+          class="cursor-pointer font-semibold text-white list-none flex items-center justify-between"
+        >
+          Description
+          <span class="transition group-open:rotate-180"
+            ><i class="bi bi-caret-down-fill"></i
+          ></span>
+        </summary>
+        <p class="mt-2 text-white font-inter text-[18px]"></p>
+      </details>
+    </section>
+    <section class="chapters bg-gray-900 px-4 py-3">
+      <div class="all-chapters flex flex-col">
+        <div class="mb-3 mt-2">
+          <h1 class="font-orbitron text-white">Chapter List</h1>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 1 <button class="btn">Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 2 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 3 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 4 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 5 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 6 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 7 <button>Read</button>
+        </div>
+        <div
+          class="flex justify-between font-inter font-medium py-4 border-b-2"
+        >
+          Chapter 8 <button>Read</button>
+        </div>
+      </div>
+    </section>
+    <script src="../javascript/details.js"></script>
+  </body>
+</html>
