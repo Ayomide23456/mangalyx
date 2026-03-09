@@ -5,7 +5,7 @@ const mangalist = [
     description:
       "A young pirate named Monkey D. Luffy sets out to find the ultimate treasure known as the One Piece.",
     rating: 4.8,
-    coverImage: "../assets/img/One Piece Volume 62.jfif",
+    coverImage: "assets/img/One Piece Volume 62.jfif",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const mangalist = [
     description:
       "A young ninja named Naruto Uzumaki seeks recognition and dreams of becoming the Hokage.",
     rating: 4.5,
-    coverImage: "../assets/img/naruto.jfif",
+    coverImage: "assets/img/naruto.jfif",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const mangalist = [
     description:
       "A young boy named Eren Yeager joins the military to fight against giant humanoid Titans.",
     rating: 4.7,
-    coverImage: "../assets/img/attack-on-titan.jfif",
+    coverImage: "assets/img/attack-on-titan.jfif",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const mangalist = [
     description:
       "In a world where people have superpowers, a boy named Izuku Midoriya dreams of becoming a hero.",
     rating: 4.6,
-    coverImage: "../assets/img/my-hero-academia.jfif",
+    coverImage: "assets/img/my-hero-academia.jfif",
   },
   {
     id: 5,
@@ -38,13 +38,13 @@ const mangalist = [
     description:
       "A young boy named Tanjiro Kamado becomes a demon slayer to avenge his family and save his sister.",
     rating: 4.7,
-    coverImage: "../assets/img/Demonslayer.jfif",
+    coverImage: "assets/img/Demonslayer.jfif",
   },
 ];
 const container = document.getElementById("manga-container");
 mangalist.forEach(manga => {
   const mangaCard = document.createElement("a");
-  mangaCard.href = `../html/mangaDetails.html?id=${manga.id}`;
+  mangaCard.href = `mangaDetails.html?id=${manga.id}`;
   mangaCard.classList.add("manga-card");
   mangaCard.innerHTML = `
     <div class="relative h-[150px] w-[120px] bg-gray-300 flex-shrink-0 rounded-lg flex flex-col justify-end">
@@ -91,7 +91,7 @@ mangalist.forEach(carouselManga => {
 
   // Add click event to navigate to details page
   carouselItem.addEventListener("click", () => {
-    window.location.href = `../html/mangaDetails.html?id=${carouselManga.id}`;
+    window.location.href = `mangaDetails.html?id=${carouselManga.id}`;
   });
 
   carouselContainer.appendChild(carouselItem);

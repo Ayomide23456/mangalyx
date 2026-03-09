@@ -7,7 +7,7 @@ const mangalist = [
     description:
       "A young pirate named Monkey D. Luffy sets out to find the ultimate treasure known as the One Piece.",
     rating: 4.8,
-    coverImage: "../assets/img/one-piece.jfif",
+    coverImage: "assets/img/one-piece.jfif",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const mangalist = [
     description:
       "A young ninja named Naruto Uzumaki seeks recognition and dreams of becoming the Hokage.",
     rating: 4.5,
-    coverImage: "../assets/img/naruto.jfif",
+    coverImage: "assets/img/naruto.jfif",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const mangalist = [
     description:
       "A young boy named Eren Yeager joins the military to fight against giant humanoid Titans.",
     rating: 4.7,
-    coverImage: "../assets/img/attack-on-titan.jfif",
+    coverImage: "assets/img/attack-on-titan.jfif",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const mangalist = [
     description:
       "In a world where people have superpowers, a boy named Izuku Midoriya dreams of becoming a hero.",
     rating: 4.6,
-    coverImage: "../assets/img/my-hero-academia.jfif",
+    coverImage: "assets/img/my-hero-academia.jfif",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const mangalist = [
     description:
       "A young boy named Tanjiro Kamado becomes a demon slayer to avenge his family and save his sister.",
     rating: 4.7,
-    coverImage: "../assets/img/Demonslayer.jfif",
+    coverImage: "assets/img/Demonslayer.jfif",
   },
 ];
 
