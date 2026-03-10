@@ -89,3 +89,24 @@ document.querySelectorAll(".manga-card").forEach(card => {
     window.location.href = `mangaDetails.html?id=${id}`;
   });
 });
+
+document.querySelector(".hello").textContent = "hi";
+const carousel = document.getElementById("carousel-page");
+const trendingBtn = document.getElementById("trending-btn");
+const topRatedBtn = document.getElementById("top-rated-btn");
+
+trendingBtn.addEventListener("click", () => {
+  carousel.style.transform = "translateX(0)";
+  trendingBtn.classList.add("bg-opacity-100");
+  trendingBtn.classList.remove("bg-opacity-50");
+  topRatedBtn.classList.add("bg-opacity-50");
+  topRatedBtn.classList.remove("bg-opacity-100");
+});
+
+topRatedBtn.addEventListener("click", () => {
+  carousel.style.transform = "translateX(-100%)";
+  topRatedBtn.classList.add("bg-opacity-100");
+  topRatedBtn.classList.remove("bg-opacity-50");
+  trendingBtn.classList.add("bg-opacity-50");
+  trendingBtn.classList.remove("bg-opacity-100");
+});

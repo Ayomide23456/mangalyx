@@ -11,19 +11,51 @@
     />
   </head>
   <body>
-    <header>
-      <div class="h-[300px] relative">
+    <header class="sticky top-0 h-[60px] w-full z-50">
+      <div class="relative">
         <a
           href="index.html"
-          class="flex w-[40px] h-[40px] items-center justify-center px-[5px] rounded-[50%] bg-white bg-opacity-20 backdrop-blur-sm mt-[5px] mx-[10px] absolute top-1 z-10 text-black text-[16px] font-bold"
+          class="flex w-[40px] h-[40px] items-center justify-center px-[5px] rounded-[50%] bg-white bg-opacity-20 backdrop-blur-sm mt-[5px] mx-[10px] absolute top-1 text-black text-[16px] font-bold z-[111]"
         >
           <i class="bi bi-chevron-left"></i>
         </a>
 
         <div
-          class="carousel relative overflow-hidden h-[200px] bg-blue-700 w-full border"
-        ></div>
+          class="carousel-indicators h-auto py-[10px] w-[100%] flex gap-2 justify-center sticky top-0 bg-gray-500 bg-opacity-90 z-10"
+        >
+          <button
+            class="trending-manga-page p-[10px] rounded-[20px] bg-green-500 font-inter font-medium text-[16px] cursor-pointer carousel-indicator bg-opacity-50 hover:bg-opacity-75 transition-all"
+            id="trending-btn"
+          >
+            Trending</button
+          ><button
+            class="top-rated-manga-page p-[10px] rounded-[20px] bg-green-500 font-inter font-medium text-[16px] cursor-pointer carousel-indicator bg-opacity-50 hover:bg-opacity-75 transition-all"
+            id="top-rated-btn"
+          >
+            Top Rated
+          </button>
+        </div>
       </div>
     </header>
+    <section class="carousel relative overflow-hidden w-full h-auto">
+      <div
+        class="carousel-page border h-full w-[200%] flex transition-transform duration-500"
+        id="carousel-page"
+      >
+        <section class="w-full flex-shrink-0">
+          <div
+            id="trendin-manga-container"
+            class="trending-manga w-full flex flex-col gap-2 border p-[5px]"
+          ></div>
+        </section>
+        <section class="w-full flex-shrink-0">
+          <div
+            id="top-rated-container"
+            class="top-rated-manga w-full flex flex-col gap-2 border p-[5px]"
+          ></div>
+        </section>
+      </div>
+    </section>
   </body>
 </html>
+<script src="javascript/trendingpage.js"></script>

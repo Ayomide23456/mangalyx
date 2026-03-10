@@ -600,6 +600,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -652,6 +656,10 @@ video {
   z-index: 50;
 }
 
+.z-\[111\] {
+  z-index: 111;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -701,6 +709,10 @@ video {
   height: 0.5rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[150px\] {
   height: 150px;
 }
@@ -715,6 +727,10 @@ video {
 
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-\[60px\] {
+  height: 60px;
 }
 
 .h-auto {
@@ -741,6 +757,14 @@ video {
   width: 120px;
 }
 
+.w-\[200\%\] {
+  width: 200%;
+}
+
+.w-\[220px\] {
+  width: 220px;
+}
+
 .w-\[230px\] {
   width: 230px;
 }
@@ -759,6 +783,30 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[235px\] {
+  width: 235px;
+}
+
+.w-\[240px\] {
+  width: 240px;
+}
+
+.w-\[245px\] {
+  width: 245px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .max-w-lg {
@@ -840,6 +888,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
 .rounded-\[30px\] {
   border-radius: 30px;
 }
@@ -873,6 +925,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
@@ -903,6 +960,11 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -910,11 +972,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-100 {
@@ -929,6 +986,10 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -936,6 +997,18 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
 }
 
 .px-2 {
@@ -983,6 +1056,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1017,6 +1095,11 @@ video {
 
 .text-\[24px\] {
   font-size: 24px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
