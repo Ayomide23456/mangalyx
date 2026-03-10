@@ -41,7 +41,8 @@ const mangalist = [
     coverImage: "assets/img/Demonslayer.jfif",
   },
 ];
-const container = document.getElementById("manga-container");
+const container = document.getElementById("trendin-manga-container");
+
 mangalist.forEach(manga => {
   const mangaCard = document.createElement("a");
   mangaCard.href = `mangaDetails.html?id=${manga.id}`;
@@ -60,7 +61,25 @@ mangalist.forEach(manga => {
   `;
   container.appendChild(mangaCard);
 });
+const topRated = document.getElementById("top-rated-manga");
 
+mangalist.forEach(topRatedManga => {
+  const topRatedMangaCard = document.createElement("a");
+  topRatedMangaCard.href = `mangaDetails.html?id=${topRatedManga.id}`;
+  topRatedMangaCard.innerHTML = `
+  <div class="relative h-[150px] w-[120px] bg-gray-300 flex-shrink-0 rounded-lg flex flex-col justify-end">
+      <img
+        src="${topRatedManga.coverImage}"
+        alt="${topRatedManga.title} Cover"
+        class="h-[150px] w-[120px] flex-shrink-0 rounded-lg border object-cover absolute top-0 left-0"
+      />
+      <h2 class="w-[90%] mb-2 mx-1.5 font-inter text-[16px] font-bold line-clamp-2 z-10 bg-opacity-50 bg-gray-500 p-2 rounded ">
+        ${topRatedManga.title}
+      </h2>
+    </div>
+  `;
+  topRated.appendChild(topRatedMangaCard);
+});
 const carouselContainer = document.getElementById("carousel-inner");
 // Clear existing carousel items
 carouselContainer.innerHTML = "";

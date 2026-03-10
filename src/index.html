@@ -74,139 +74,44 @@
     </header>
     <!-- End of header -->
     <!-- trending manga -->
-    <section>
+    <section class="flex flex-col">
       <div class="trending py-4 w-[95%] m-auto">
         <div class="flex justify-between items-center py-2">
-          <h1 class="text-[18px] font-bold mb-[10px] font-orbitron">
+          <h1 class="rated1 text-[18px] font-bold mb-[10px] font-orbitron">
             Trending Manga
           </h1>
           <a
-            href="../html/trending-page.html"
+            href="trending-page.html"
             class="flex items-center gap-1 text-gray-500"
           >
             <i class="bi bi-chevron-right"></i>
           </a>
         </div>
         <div
-          id="manga-container"
-          class="trending-manga w-full flex gap-2 overflow-x-auto no-scrollbar"
+          id="trendin-manga-container"
+          class="trending-manga w-full flex gap-2 overflow-x-auto no-scrollbar border"
         ></div>
       </div>
     </section>
     <!--End of trending manga -->
+    <!-- Top rated -->
     <section>
       <div class="top-rated py-4 w-[95%] m-auto">
         <div class="flex justify-between items-center py-2">
-          <h1 class="text-[18px] font-bold mb-[10px] font-orbitron">
+          <h1 class="rated text-[18px] font-bold mb-[10px] font-orbitron">
             Top Rated
           </h1>
           <a
-            href="../html/trending-page.html"
+            href="trending-page.html"
             class="flex items-center gap-1 text-gray-500"
           >
             <i class="bi bi-chevron-right"></i>
           </a>
         </div>
         <div
-          class="trending-manga w-full flex gap-2 overflow-x-auto no-scrollbar"
-        >
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="1"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="2"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="3"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="4"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="1"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="2"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="3"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="4"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="1"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="2"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="3"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-          <div
-            class="manga-card h-[150px] w-[120px] bg-red-300 flex-shrink-0 rounded-lg flex flex-col justify-end cursor-pointer"
-            data-id="4"
-          >
-            <h2 class="w-full mb-2 mx-1.5 font-inter text-[14px] font-medium">
-              Manga Name
-            </h2>
-          </div>
-        </div>
+          class="top-rated-manga w-full flex gap-2 overflow-x-auto no-scrollbar border"
+          id="top-rated-manga"
+        ></div>
       </div>
     </section>
   </body>
