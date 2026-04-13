@@ -90,7 +90,6 @@ document.querySelectorAll(".manga-card").forEach(card => {
   });
 });
 
-document.querySelector(".hello").textContent = "hi";
 const carousel = document.getElementById("carousel-page");
 const trendingBtn = document.getElementById("trending-btn");
 const topRatedBtn = document.getElementById("top-rated-btn");
